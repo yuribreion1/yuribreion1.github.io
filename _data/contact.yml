@@ -2,6 +2,7 @@
 
 - type: github
   icon: "fab fa-github"
+  url:  'https://github.com/yuribreion1'                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
