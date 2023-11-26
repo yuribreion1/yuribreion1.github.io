@@ -1,16 +1,14 @@
 ---
 title: Data Analysis with SQL databases - Part 1
 date: 2023-11-26 10:30:00
-categories: [technical_knowledge, business_analysis]
-tags: [sql]     # TAG names should always be lowercase
+categories: [technical_knowledge, data_analysis]
+tags: [sql, dbeaver]     # TAG names should always be lowercase
 ---
 
 As part of business analyst activities, the knowledge of viewing and obtaining data from databases is crucial to evaluating business requirements and validating use-case scenarios. 
 It is possible to simulate scenarios and load test data to train locally; you do not need to provision a database with the cloud providers. I'll share the steps that I utilized to train and test my knowledge.
 
-DBeaver is a free cross-platform database tool for developers, database administrators, analysts, and everyone working with data. With this tool, you can create a simple database to run your first queries.
-
-Download Dbeaver at https://dbeaver.io and select the Community version.
+[DBeaver](https://dbeaver.io) is a free cross-platform database tool for developers, database administrators, analysts, and everyone working with data. With this tool, you can create a simple database to run your first queries.
 
 After the installation, a prompt will appear to ask you to create a sample database using SQLite. 
 ![create_sample_database](/assets/img/analysis_with_databases/create_sample_database.jpg "Create sample database")
