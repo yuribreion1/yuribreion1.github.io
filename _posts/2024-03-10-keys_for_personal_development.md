@@ -1,8 +1,8 @@
 ---
 title: Did you know that personal development can also help you grow as a professional?
-date: 2024-03-10 22:30:00
-categories: [personal development]
-tags: [personal, soft-skills]     # TAG names should always be lowercase
+date: 2024-03-10 10:30:00
+categories: [personal_development]
+tags: [personal, soft_skills]     # TAG names should always be lowercase
 ---
 
 I have often found myself seeking to update my technical skills to stand out professionally, but this has led me to neglect personal development. Whenever I drive home on weekends, I become thoughtful and resolve many issues that were stuck in my processing queue.
