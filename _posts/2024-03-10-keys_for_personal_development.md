@@ -9,7 +9,7 @@ I have often found myself seeking to update my technical skills to stand out pro
 
 It may seem like a cliché, but after careful consideration, I have come to the conclusion that it is not as simple as it seems. So, let's dive in:
 
-Personal development is just as important as hard skills or specific knowledge to solve your daily work problems. I dare say it is the foundation, when consistency is lacking and fatigue comes too quickly.
+> Personal development is just as important as hard skills or specific knowledge to solve your daily work problems. I dare say it is the foundation, when consistency is lacking and fatigue comes too quickly.
 
 Here are some of the points that I consider necessary for building this foundation for personal development. Some of them may not be an issue for you, but you can use this to work on the points that are really challenging for you.
 
