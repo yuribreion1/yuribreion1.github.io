@@ -1,9 +1,8 @@
 ---
 title: What I learned from the Slow Media Manifesto
-date: 2024-03-31 08:09:00
-categories: [personal_development]
-tags: [personal]
 comments: true
+layout: default
+parent: Personal Development
 ---
 
 # What I learned from the Slow Media Manifesto

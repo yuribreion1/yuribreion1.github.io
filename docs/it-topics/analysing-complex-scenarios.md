@@ -1,8 +1,8 @@
 ---
+layout: default
 title: Analyzing Complex Requirements and Difficult Discussions with Stakeholders
-date: 2024-03-16 09:30:00
-categories: [business_analysis]
-tags: [soft_skills, business_analysis]     # TAG names should always be lowercase
+nav_order: 2
+parent: IT Topics
 ---
 
 In business analysis, technical solutions may be required, whether for digital transformation projects or simply process improvements required by leadership.
