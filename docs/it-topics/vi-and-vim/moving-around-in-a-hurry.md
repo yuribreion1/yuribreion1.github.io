@@ -3,8 +3,10 @@ layout: default
 title: Moving Around in a Hurry
 nav_order: 2
 parent: VI and VIM
-grant_parent: IT Topics
+grand_parent: IT Topics
 ---
+
+# Moving Around in a Hurry
 
 You will not use `vi` just to create new files. You will spend a lot of your time in `vi` editing existing files. You rarely want to simply open to the first line in the file and move through it line by line; you want to get to a specific place in a file and start working.
 
