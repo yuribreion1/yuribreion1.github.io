@@ -5,6 +5,8 @@ parent: IT Topics
 nav_order: 3
 ---
 
+# Data Analysis with SQL databases - Part 1
+
 As part of business analyst activities, the knowledge of viewing and obtaining data from databases is crucial to evaluating business requirements and validating use-case scenarios. 
 It is possible to simulate scenarios and load test data to train locally; you do not need to provision a database with the cloud providers. I'll share the steps that I utilized to train and test my knowledge.
 

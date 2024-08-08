@@ -5,6 +5,8 @@ nav_order: 2
 parent: IT Topics
 ---
 
+# Analyzing Complex Requirements and Difficult Discussions with Stakeholders
+
 In business analysis, technical solutions may be required, whether for digital transformation projects or simply process improvements required by leadership.
 
 In many scenarios, you will not be creating something new, but rather making adjustments and changes that are aligned with the strategic solution. However, it is not always in the interest of stakeholders who have been working in a certain way for years to change the way they work and have to learn something new.
