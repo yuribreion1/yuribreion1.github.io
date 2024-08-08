@@ -1,8 +1,8 @@
 ---
+layout: default
 title: Data Analysis with SQL databases - Part 1
-date: 2023-11-26 10:30:00
-categories: [technical_knowledge, data_analysis]
-tags: [sql, dbeaver]     # TAG names should always be lowercase
+parent: IT Topics
+nav_order: 3
 ---
 
 As part of business analyst activities, the knowledge of viewing and obtaining data from databases is crucial to evaluating business requirements and validating use-case scenarios. 
