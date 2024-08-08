@@ -2,7 +2,7 @@
 layout: default
 title: Data Analysis with SQL databases - Part 1
 parent: IT Topics
-nav_order: 3
+nav_order: 4
 ---
 
 # Data Analysis with SQL databases - Part 1

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Analyzing Complex Requirements and Difficult Discussions with Stakeholders
-nav_order: 2
+nav_order: 3
 parent: IT Topics
 ---
 
