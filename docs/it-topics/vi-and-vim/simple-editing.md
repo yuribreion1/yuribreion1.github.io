@@ -6,6 +6,8 @@ parent: VI and VIM
 grand_parent: IT Topics
 ---
 
+# Simple Editing
+
 This chapter introduces you to editing with `vi`.
 `vi` has two modes: command mode and insert mode. As soon as you enter a file, you are in command mode, and the editor is waiting for you to enter a command. Commands enable you to move anywhere in the file, to perform edits, or to enter insert mode to add new text. Commands can also be given to exit the file(saving or ignoring your edits) in order to return to the Unix prompt.
 

@@ -6,6 +6,8 @@ parent: IT Topics
 has_children: true
 ---
 
+# VI and VIM
+
 Vim, short for "Vi Improved," is a powerful and highly configurable text editor that is popular among programmers, system administrators, and other power users. With its origins dating back to the original Unix Vi editor, Vim has evolved into a feature-rich and versatile tool that offers numerous benefits for efficient text editing and manipulation.
 
 What sets Vim apart is its unique modal editing system, which allows users to switch between different modes for different tasks. In normal mode, Vim offers an extensive set of commands for navigating, searching, and manipulating text. Insert mode is where you can directly type and edit your text, while visual mode enables easy selection and manipulation of blocks of text.
