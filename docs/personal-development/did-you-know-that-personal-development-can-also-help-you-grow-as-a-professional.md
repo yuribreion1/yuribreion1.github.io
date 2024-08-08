@@ -5,6 +5,8 @@ parent: Personal Development
 nav_order: 2
 ---
 
+# Did you know that personal development can also help you grow as a professional?
+
 I have often found myself seeking to update my technical skills to stand out professionally, but this has led me to neglect personal development. Whenever I drive home on weekends, I become thoughtful and resolve many issues that were stuck in my processing queue.
 
 It may seem like a cliché, but after careful consideration, I have come to the conclusion that it is not as simple as it seems. So, let's dive in:
