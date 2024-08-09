@@ -82,3 +82,37 @@ To search command is the special character `/` (slash). When you enter a slash, 
 A pattern can be whole word or any other sequence of characters (called a "character string"). For example, if you search for the character _red_, you will match _red_ as a whole word, but you will also match _occurred_ word. If you include a space before or after pattern, the spaces will be treated as part of the word. As with all bottom-line commands, press `[ENTER]` to finish. `vi`, like all other Unix editors, has a special pattern-matching language that allows you to look for variable text pattern: for example, any word beginning with a capital letter, or a word _The_ at the beginning of a line.
 
 `vi` begins the search at the cursor and searches forward, wrapping around to the start of the file if necessary. The cursor will move to the first occurrence of the pattern. If there is no match, the message "Pattern not found" will be shown on the status line.
+
+## Repeating Searches
+
+The last pattern that you searched for stays available throughout your editing session. After a search, instead f repeating you original keystrokes, you can use a command to search again for the last pattern:
+
+- `n` - Repeat search in same direction
+- `N` - Repeat search in opposite direction
+- `/ [ENTER]` - Repeat search forward 
+- `? [ENTER]` - Repeat search backward 
+
+Since the last pattern stays available, you can search for a pattern, do some work, and then search again for the same pattern without retyping it by using `n`, `N`, `/` or `?`. The direction of your search is displayed at the bottom left of the screen.
+
+### Changing through searching
+
+You can combine the `/` and `?` search operators with the commands that change text, sech as `c` and `d`.
+
+## Current Line Searches
+
+There are also miniature versions of the search commands that operate within the current line. The command `fx` moves the cursor to the next instance of the character `x` (where x stands for any character). The command `tx` moves the cursor to the character _before_ the next instance of _x_. Semicolons can be used repeatedly to "find" your way along.
+
+- `fx` - Find (move cursor to) next occurrence of x in the line, where x stands for any character
+- `Fx` - Find (move cursor to) previous occurrence of x in the line
+- `tx` - Find (move cursor to) character _before_ next occurrence of x in the line
+- `Tx` - Find (move cursor to) character _after_ previous occurrence of x in the line
+- `;` - Repeat previous find command in same direction
+- `,` - Repeat previous find command in opposite direction
+
+Examples:
+
+| Keystrokes | Results  | Description |
+| -------------- | --------------- |---------- |
+| `fo` | With a screen edit***o***r you can scroll the | Find the first occurrence of letter o |
+| `;` | With a screen editor y***o***u can scroll the | Next occurrence of letter o |
+
