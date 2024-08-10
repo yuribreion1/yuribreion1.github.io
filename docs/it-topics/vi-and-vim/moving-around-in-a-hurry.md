@@ -123,3 +123,45 @@ Lines in a file are numbered sequentially, and you can move through a file by sp
 Line numbers are useful for identifying the beginning and end of large blocks of text you want to edit. Line numbers are also useful for programmers, since compilers error messages refer to line numbers. Finally, line numbers are used by `ex` commands.
 
 The command `CTRL + G` causes the following to be displayed at the bottom of your screen: the current line number, the total number of lines in the file, and what percentage of the total the present file number represents.
+
+## The G (Go To) Command
+
+You can use line numbers to move the cursor through a file. The G(go to) command uses a line number as a numeric argument and moves directly to that line.
+For instance, 44G moves the cursor to the beginning of line 44. `G` without a line number moves the cursor to the last line of the file.
+
+## Review of vi Motion Commands
+
+| Movement | Command |
+| -------------- | --------------- |
+| Scroll forward one screen | ^F |
+| Scroll backward one scree | ^B |
+| Scroll forward half screen | ^D | 
+| Scroll backward half screen | ^U |
+| Scroll forward one line | ^E |
+| Scroll backward one line | ^Y |
+| Move current line to top of screen and scroll | z [ENTER] |
+| Move current line to center of screen and scroll | z . |
+| Move current line to bottom of screen and scroll | z - |
+| Redraw the screen | ^L |
+| Move to home - the top line of screen | H |
+| Move to middle line of screen | M |
+| Move to first character of next line | [ENTER] |
+| Move to first character of next line | + |
+| Move to first character of previous line | - |
+| Move to first nonblank character of current line | ^ |
+| Move to end of word | e |
+| Move to end of word ignoring punctuation | E |
+| Move to the beginning of current sentence | ( |
+| Move to beginning of next sentence | ) | 
+| Move to beginning of current paragraph | { |
+| Move to beginning of next paragraph | } |
+| Moving to beginning of current section | [[ |
+| Moving to beginning of next section | ]] |
+| Search forward for pattern | /_pattern_ |
+| Search backward for pattern | ?_pattern_
+| Repeat last search | n |
+| Repeat last search in opposite direction | N |
+| Repeat last search forward | / |
+| Repeat last search backward | ? |
+| Go to given line _n_ | _n_ G |
+| Go to end of file | G |
