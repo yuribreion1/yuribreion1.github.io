@@ -19,6 +19,7 @@ There are tools to be highlighted and mentioned to improve the experience using 
 2. Setting spellcheck       - `:set spell`
     2.1 Setting language    - `:set spelllang=en_us`
     2.2 Display suggestions - `:z=`
+3. Wrap line text           - `:set wrap`
 
 ## Single Movements
 

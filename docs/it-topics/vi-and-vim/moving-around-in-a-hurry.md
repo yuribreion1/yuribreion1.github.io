@@ -116,3 +116,10 @@ Examples:
 | `fo` | With a screen edit***o***r you can scroll the | Find the first occurrence of letter o |
 | `;` | With a screen editor y***o***u can scroll the | Next occurrence of letter o |
 
+
+## Movement by Line Number
+
+Lines in a file are numbered sequentially, and you can move through a file by specifying line numbers.
+Line numbers are useful for identifying the beginning and end of large blocks of text you want to edit. Line numbers are also useful for programmers, since compilers error messages refer to line numbers. Finally, line numbers are used by `ex` commands.
+
+The command `CTRL + G` causes the following to be displayed at the bottom of your screen: the current line number, the total number of lines in the file, and what percentage of the total the present file number represents.
