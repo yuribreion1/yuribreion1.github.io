@@ -93,6 +93,11 @@ const config: Config = {
           label: 'Technology',
         },
         {
+          to: 'docs/category/professional-life',
+          position: 'left',
+          label: 'Professional life',
+        },
+        {
           href: 'https://github.com/yuribreion1',
           label: 'GitHub',
           position: 'right',
