@@ -1,24 +1,28 @@
-# Bundler cache
-.bundle
-vendor
-Gemfile.lock
-
-# Jekyll cache
-.jekyll-cache
-_site
-
-# RubyGems
-*.gem
-
 # NPM dependencies
 node_modules
-package-lock.json
 
 # IDE configurations
 .idea
 .vscode
+.DS_Store
+
+# Dependencies
+/node_modules
+
+# Production
+/build
+
+# Generated files
+.docusaurus
+.cache-loader
 
 # Misc
-assets/js/dist
-assets/img/.DS_Store
-assets/img/analysis_with_databases/.DS_Store
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
