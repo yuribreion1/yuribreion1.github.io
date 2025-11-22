@@ -1,0 +1,1276 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-technology/github/ghf" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">GitHub Foundations | yuribreion1</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/docs/technology/github/ghf"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="GitHub Foundations | yuribreion1"><meta data-rh="true" name="description" content="Introduction to Git"><meta data-rh="true" property="og:description" content="Introduction to Git"><link data-rh="true" rel="icon" href="/favicons/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/docs/technology/github/ghf"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/technology/github/ghf" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/technology/github/ghf" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technology","item":"https://your-docusaurus-site.example.com/docs/category/technology"},{"@type":"ListItem","position":2,"name":"GitHub","item":"https://your-docusaurus-site.example.com/docs/category/github"},{"@type":"ListItem","position":3,"name":"GitHub Foundations","item":"https://your-docusaurus-site.example.com/docs/technology/github/ghf"}]}</script><link rel="stylesheet" href="/assets/css/styles.daad9162.css">
+<script src="/assets/js/runtime~main.469b49cc.js" defer="defer"></script>
+<script src="/assets/js/main.453cfac8.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/favicons/favicon-32x32.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/favicons/favicon-32x32.png" alt="yuribreion1" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/favicons/favicon-32x32.png" alt="yuribreion1" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">About</b></a><a class="navbar__item navbar__link" href="/docs/category/technology">Technology</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/yuribreion1" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/about"><span title="About" class="linkLabel_WmDU">About</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/docs/category/technology"><span title="Technology" class="categoryLinkLabel_W154">Technology</span></a><button aria-label="Collapse sidebar category &#x27;Technology&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/docs/category/github"><span title="GitHub" class="categoryLinkLabel_W154">GitHub</span></a><button aria-label="Collapse sidebar category &#x27;GitHub&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/technology/github/overview"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/technology/github/ghf"><span title="GitHub Foundations" class="linkLabel_WmDU">GitHub Foundations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/technology/github/ghas"><span title="GitHub Advanced Security" class="linkLabel_WmDU">GitHub Advanced Security</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/category/python"><span title="Python" class="categoryLinkLabel_W154">Python</span></a><button aria-label="Expand sidebar category &#x27;Python&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/category/quality-and-security"><span title="Quality and Security" class="categoryLinkLabel_W154">Quality and Security</span></a><button aria-label="Expand sidebar category &#x27;Quality and Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/technology/using_postgresql"><span title="Installing PostgreSQL with Homebrew" class="linkLabel_WmDU">Installing PostgreSQL with Homebrew</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/tutorial---extras"><span title="Tutorial - Extras" class="categoryLinkLabel_W154">Tutorial - Extras</span></a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/technology"><span>Technology</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/github"><span>GitHub</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">GitHub Foundations</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>GitHub Foundations</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction-to-git">Introduction to Git<a href="#introduction-to-git" class="hash-link" aria-label="Direct link to Introduction to Git" title="Direct link to Introduction to Git" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-version-control">What is version control?<a href="#what-is-version-control" class="hash-link" aria-label="Direct link to What is version control?" title="Direct link to What is version control?" translate="no">​</a></h3>
+<p>A version control system (VCS) is a program or set of programs that tracks changes to a collection of files. With the goal to easily recall earlier versions of individual files or of the entire project.</p>
+<p>Another name for a VCS is software configuration management (SCM). VCS is one of the practices involved in SCM.</p>
+<p>Instances of VCS used a centralized server to store a project history. This centralization meant that the one server was also potentially a single point of failure.</p>
+<p><strong>Git is distributed</strong>, which means that a project&#x27;s complete history is stored both on the client and on the server.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="git-terminology">Git terminology<a href="#git-terminology" class="hash-link" aria-label="Direct link to Git terminology" title="Direct link to Git terminology" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Working tree</strong>: The set of nested directories and files that contain the project that&#x27;s being worked on.</li>
+<li class=""><strong>Hash</strong>: Git uses hashes that are 160 bits long, to identify if a file has changed or not. If the file timestamp is changed, but the file hash isn&#x27;t changed, Git knowns the file contents aren&#x27;t changed.</li>
+<li class=""><strong>Object</strong>: A Git repo contains four types of objects:<!-- -->
+<ul>
+<li class="">A blob object that contains an ordinary file.</li>
+<li class="">A tree object represents a directory.</li>
+<li class="">A commit object represents a specific version of the working tree.</li>
+<li class="">A tag is a name attached to a commit.</li>
+</ul>
+</li>
+<li class=""><strong>Branch</strong>: Is a named series of linked commits. The most recent commit of a branch is called the <em>head</em>.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="git-and-github">Git and GitHub<a href="#git-and-github" class="hash-link" aria-label="Direct link to Git and GitHub" title="Direct link to Git and GitHub" translate="no">​</a></h3>
+<p>As mentioned previously, Git is a distributed version control system (DVCS). GitHub is a cloud platform that uses Git as its core technology, that acts as the remote repository.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="basic-git-commands">Basic Git commands<a href="#basic-git-commands" class="hash-link" aria-label="Direct link to Basic Git commands" title="Direct link to Basic Git commands" translate="no">​</a></h3>
+<ul>
+<li class=""><code>git status</code></li>
+<li class=""><code>git add</code></li>
+<li class=""><code>git commit</code></li>
+<li class=""><code>git log</code></li>
+<li class=""><code>git help</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction-to-github">Introduction to GitHub<a href="#introduction-to-github" class="hash-link" aria-label="Direct link to Introduction to GitHub" title="Direct link to Introduction to GitHub" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-github">What is GitHub?<a href="#what-is-github" class="hash-link" aria-label="Direct link to What is GitHub?" title="Direct link to What is GitHub?" translate="no">​</a></h3>
+<p>GitHub is a cloud-based platform that uses Git, a distributed version control (DVCS) system, as its core.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="four-pillars-of-github">Four pillars of GitHub<a href="#four-pillars-of-github" class="hash-link" aria-label="Direct link to Four pillars of GitHub" title="Direct link to Four pillars of GitHub" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>AI</strong>: The GitHub Enterprise platform is enhancing collaboration through AI-powered pull requests and issues through Copilot, and security by automating security checks faster.</li>
+<li class=""><strong>Collaboration</strong>: Repos, Issues, Pull Requests, and other tools to help the whole company to work faster, cut down approval times, and ship more quickly.</li>
+<li class=""><strong>Productivity</strong>: CI/CD tools directly integrated into the workflow, the platform gives users the ability to set tasks and forget them. Giving time to developers to focus on what matters most.</li>
+<li class=""><strong>Security</strong>: GitHub Enterprise platform includes native, first-party security features that minimize security risk with a built-in security solutions. Security Overview and Dependabot are those features.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-a-repository">What is a repository?<a href="#what-is-a-repository" class="hash-link" aria-label="Direct link to What is a repository?" title="Direct link to What is a repository?" translate="no">​</a></h4>
+<p>A repository contains all of your project&#x27;s files and each file&#x27;s revision history.</p>
+<ul>
+<li class="">To create a repository, click on the plus button at the top right:</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="new repository" src="/assets/images/gh_repository-2d2485595676257305df479fdeff5acc.png" width="270" height="267" class="img_ev3q"></p>
+<ul>
+<li class="">To add a file to your repo, click on the <strong>Add file</strong> button</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="new file on the repo" src="/assets/images/gh_repo_new_file-8d4d82dae76c9bae3da98ade60e3fde1.png" width="1200" height="216" class="img_ev3q"></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-are-gists">What are gists?<a href="#what-are-gists" class="hash-link" aria-label="Direct link to What are gists?" title="Direct link to What are gists?" translate="no">​</a></h4>
+<p>Similarly to repositories, gists are a simplified way to share code snippets with others.
+Basically, gist is a Git repository, which you can fork and clone to be made either public or secret.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-are-wikis">What are wikis?<a href="#what-are-wikis" class="hash-link" aria-label="Direct link to What are wikis?" title="Direct link to What are wikis?" translate="no">​</a></h4>
+<p>Every repository on GitHub comes equipped with a section for hosting documentation, called a wiki. While a README file quickly tells what your project can do, you can use a wiki to provide additional documentation.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="components-of-the-github-flow">Components of the GitHub flow<a href="#components-of-the-github-flow" class="hash-link" aria-label="Direct link to Components of the GitHub flow" title="Direct link to Components of the GitHub flow" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-are-branches">What are branches?<a href="#what-are-branches" class="hash-link" aria-label="Direct link to What are branches?" title="Direct link to What are branches?" translate="no">​</a></h4>
+<p>Branches are an essential part to the GitHub experience because they&#x27;re where we can make changes without affecting the entire project we&#x27;re working on. Your branch is a safe place to experiment with new features or fixes.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-are-commits">What are commits?<a href="#what-are-commits" class="hash-link" aria-label="Direct link to What are commits?" title="Direct link to What are commits?" translate="no">​</a></h4>
+<p>A commit is a change to one or more files on a branch. Every time a commit is created, it&#x27;s assigned a unique ID and tracked along with the time and contributor.</p>
+<p>Within a git repository, a file can exist in several valid states as it goes through the version control process. The primary states for a file in a Git repository are <strong>Untracked</strong> and <strong>Tracked</strong>. These two states consist if Git is aware or not of the file existence.</p>
+<p>Tracked files are actively monitored by Git. And have the following substates:</p>
+<ul>
+<li class="">Unmodified: The file is tracked, but it hasn&#x27;t been modified since the last commit.</li>
+<li class="">Modified: The file(s) has been changed since the last commit, is not staged yet.</li>
+<li class="">Staged: The modified file(s) are ready to be committed into the staged area (aka. index)</li>
+<li class="">Committed: The file is in the repository&#x27;s database. It represents the last committed version of the file.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-are-pull-requests">What are pull requests?<a href="#what-are-pull-requests" class="hash-link" aria-label="Direct link to What are pull requests?" title="Direct link to What are pull requests?" translate="no">​</a></h4>
+<p>A pull request is the mechanism used to signed that <strong>the commits from one branch are ready to be merged into another branch</strong>.</p>
+<p>A team member who submits a pull request can request the review of other team members before the merge.</p>
+<p>Once the changes have been approved (if required), the pull request&#x27;s source branch is merged into the base branch.</p>
+<p><img decoding="async" loading="lazy" alt="pull request" src="/assets/images/gh_pull_request-75f78983f10fb4f5816305403a19b9f4.png" width="1003" height="658" class="img_ev3q"></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-github-flow">The GitHub flow<a href="#the-github-flow" class="hash-link" aria-label="Direct link to The GitHub flow" title="Direct link to The GitHub flow" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="github flow" src="/assets/images/gh_flow-b45fad005ea163630c6a2877e39ea736.png" width="2100" height="671" class="img_ev3q"></p>
+<p>The GitHub flow can be defined as a lightweight workflow that allows for safe experimentation. You can test new ideas and collaborate with your team by using branching, pull requests, and merging.</p>
+<ol>
+<li class="">Start by creating a branch so that the changes, features and fixes you create don&#x27;t affect the main branch.</li>
+<li class="">Next, make your changes on the branch you have created for experimentation.</li>
+<li class="">Now, create a pull request to ask collaborators for feedback. On this step, reviews are important prior to the merge with the main branch.</li>
+<li class="">If the code is reviewed and approved, the merge can occur to sync the code changes on the main branch.</li>
+<li class="">Finally, you can delete your branch. To prevent that others use accidentally old branches.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-is-a-collaborative-platform">GitHub is a collaborative platform<a href="#github-is-a-collaborative-platform" class="hash-link" aria-label="Direct link to GitHub is a collaborative platform" title="Direct link to GitHub is a collaborative platform" translate="no">​</a></h3>
+<p>Along of the features that allow to keep the project up-to-date as branches, and pull requests. GitHub has more features to improve collaboration within repositories.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="issues">Issues<a href="#issues" class="hash-link" aria-label="Direct link to Issues" title="Direct link to Issues" translate="no">​</a></h4>
+<p>GitHub Issues were created to track ideas, feedbacks, tasks, or bugs for work on GitHub. An issue can be created from a repository:</p>
+<p><img decoding="async" loading="lazy" alt="issues" src="/assets/images/gh_issues-d32eb0458fb06f0038fb2af4bcb61353.png" width="4331" height="660" class="img_ev3q"></p>
+<p>Issues can be attached to a project, a pull request, and to a label as well.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="discussions">Discussions<a href="#discussions" class="hash-link" aria-label="Direct link to Discussions" title="Direct link to Discussions" translate="no">​</a></h4>
+<p>Discussions are for conversations accessible to everyone and aren&#x27;t related to code.</p>
+<blockquote>
+<p>[!NOTE]
+Discussion is enabled on repository settings</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" alt="discussion" src="/assets/images/gh_discussion_enable-2e51bd85c1ddc8f93e782bfc5cb3a2c5.png" width="468" height="116" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-platform-management">GitHub platform management<a href="#github-platform-management" class="hash-link" aria-label="Direct link to GitHub platform management" title="Direct link to GitHub platform management" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="managing-notifications-and-subscriptions">Managing notifications and subscriptions<a href="#managing-notifications-and-subscriptions" class="hash-link" aria-label="Direct link to Managing notifications and subscriptions" title="Direct link to Managing notifications and subscriptions" translate="no">​</a></h4>
+<p>You can choose to receive ongoing updates about specific activity on GitHub through a subscription. Notifications are the updates that you receive for specific activity to which you&#x27;re subscribed.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="subscription-options">Subscription options<a href="#subscription-options" class="hash-link" aria-label="Direct link to Subscription options" title="Direct link to Subscription options" translate="no">​</a></h5>
+<p>You can choose to subscribe to notifications for:</p>
+<ul>
+<li class="">A conversation in a specific issue, pull request, or gist.</li>
+<li class="">CI activity, such as the status of workflows in repositories set up with GitHub Actions.</li>
+<li class="">Repository issues, pull requests, releases, security alerts, or discussions (if enabled).</li>
+<li class="">All activities in repository.</li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-are-github-pages">What are GitHub Pages?<a href="#what-are-github-pages" class="hash-link" aria-label="Direct link to What are GitHub Pages?" title="Direct link to What are GitHub Pages?" translate="no">​</a></h5>
+<p>GitHub Pages is a static site-hosting service that takes HTML, CSS, and Javascript files straight from a repository on GitHub.
+Optionally, you can run the files through a build process and publish a website. Edit and push your changes, and your project is live for the public in a visually organized way.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction-to-githubs-products">Introduction to GitHub&#x27;s products<a href="#introduction-to-githubs-products" class="hash-link" aria-label="Direct link to Introduction to GitHub&#x27;s products" title="Direct link to Introduction to GitHub&#x27;s products" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-accounts-and-plans">GitHub accounts and plans<a href="#github-accounts-and-plans" class="hash-link" aria-label="Direct link to GitHub accounts and plans" title="Direct link to GitHub accounts and plans" translate="no">​</a></h3>
+<p>There are three types of GitHub accounts:</p>
+<ul>
+<li class="">Personal</li>
+<li class="">Organization</li>
+<li class="">Enterprise</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="personal-accounts">Personal accounts<a href="#personal-accounts" class="hash-link" aria-label="Direct link to Personal accounts" title="Direct link to Personal accounts" translate="no">​</a></h4>
+<p>Every person who uses GitHub.com signs into a personal account. Your personal/user account can own resources such as repositories, packages, and projects and has a straightforward way to manage your permission. Actions that you take, are attributed to your personal account.</p>
+<p>Each personal account uses either GitHub Free or Pro. All personal accounts own an unlimited number of public and private repositories. <strong>If you use GitHub Free, private repositories owned by your personal account have a limited feature set.</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="organization-accounts">Organization accounts<a href="#organization-accounts" class="hash-link" aria-label="Direct link to Organization accounts" title="Direct link to Organization accounts" translate="no">​</a></h4>
+<p>Organization accounts are shared accounts where an unlimited number of people can collaborate across many projects at once. Unlike personal accounts, permissions with organization accounts are done with a tiered approach.</p>
+<p>Orgs can also own resources such as repositories, packages, and projects. However, you can&#x27;t sign into an organization. Instead, each person signs into their own personal account, and any actions on the organization resources are attributed to their personal accounts. <strong>Each personal account can be a member of multiple organizations</strong>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="enterprise-accounts">Enterprise accounts<a href="#enterprise-accounts" class="hash-link" aria-label="Direct link to Enterprise accounts" title="Direct link to Enterprise accounts" translate="no">​</a></h4>
+<p>Enterprise accounts on GitHub.com allow admins to centrally manage policies and billing for multiple organizations and enable inner sourcing between their organizations.</p>
+<p>Organizations are shared accounts for enterprise members to collaborate across many projects at once. Owners can invite existing organizations to join your enterprise account.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-plans">GitHub plans<a href="#github-plans" class="hash-link" aria-label="Direct link to GitHub plans" title="Direct link to GitHub plans" translate="no">​</a></h3>
+<p>There are several free GitHub products, in addition to the paid ones:</p>
+<ul>
+<li class="">GitHub Free for personal accounts and organizations</li>
+<li class="">GitHub Pro for personal accounts</li>
+<li class="">GitHub Team</li>
+<li class="">GitHub Enterprise</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-free-for-personal-accounts">GitHub Free for personal accounts<a href="#github-free-for-personal-accounts" class="hash-link" aria-label="Direct link to GitHub Free for personal accounts" title="Direct link to GitHub Free for personal accounts" translate="no">​</a></h4>
+<p>Signing up for GitHub Free gives a new user a personal user account. A personal user account includes unlimited public and private repositories and unlimited collaborators.</p>
+<p>With GitHub Free, a personal account includes:</p>
+<ul>
+<li class="">GitHub Community Support</li>
+<li class="">Dependabot alerts</li>
+<li class="">Two-factor authentication enforcement</li>
+<li class="">500-MB GitHub Packages storage</li>
+<li class="">120 GitHub Codespaces core hours per month</li>
+<li class="">15-GB GitHub Codespaces storage per month</li>
+<li class="">GitHub Actions:<!-- -->
+<ul>
+<li class="">2,000 minutes per month</li>
+<li class="">Deployment protection rules for public repositories</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-free-for-organizations">GitHub Free for organizations<a href="#github-free-for-organizations" class="hash-link" aria-label="Direct link to GitHub Free for organizations" title="Direct link to GitHub Free for organizations" translate="no">​</a></h4>
+<p>With GitHub Free for organizations, you can work with unlimited collaborators on unlimited public repositories, with a full feature set. Or, unlimited private repository with a limited feature set.</p>
+<p>In addition, teams can work and manage groups.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-pro">GitHub Pro<a href="#github-pro" class="hash-link" aria-label="Direct link to GitHub Pro" title="Direct link to GitHub Pro" translate="no">​</a></h4>
+<p>GitHub Pro is similar to GitHub Free with upgraded features:</p>
+<ul>
+<li class="">GitHub Support via email</li>
+<li class="">3,000 GitHub Actions minutes per month</li>
+<li class="">2-GB GitHub Packages storage</li>
+<li class="">180 GitHub Codespaces core hours per month</li>
+<li class="">20-GB GitHub Codespaces storage per month</li>
+<li class="">Advanced tools and insights in private repositories:<!-- -->
+<ul>
+<li class="">Required pull request reviewers</li>
+<li class="">Multiple pull request reviewers</li>
+<li class="">Protected branches</li>
+<li class="">Code owners</li>
+<li class="">Autolinked references</li>
+<li class="">GitHub Pages</li>
+<li class="">Wikis</li>
+<li class="">Repository insight graphs for pulse, contributors, traffic, commits, code frequency, network, and forks</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-team">GitHub Team<a href="#github-team" class="hash-link" aria-label="Direct link to GitHub Team" title="Direct link to GitHub Team" translate="no">​</a></h4>
+<p>GitHub Team is the version of <strong>GitHub Pro for organizations</strong>. GitHub Team is better than GitHub Free for organizations because it provides increased GitHub Actions minutes and extra GitHub Packages storage.</p>
+<ul>
+<li class="">GitHub Support via email</li>
+<li class="">3,000 GitHub Actions minutes per month</li>
+<li class="">2-GB GitHub Packages storage</li>
+<li class="">Advanced tools and insights in private repositories:<!-- -->
+<ul>
+<li class="">Required pull request reviewers</li>
+<li class="">Multiple pull request reviewers</li>
+<li class="">Draft pull requests</li>
+<li class="">Team pull request reviewers</li>
+<li class="">Protected branches</li>
+<li class="">Code owners</li>
+<li class="">Scheduled reminders</li>
+<li class="">GitHub Pages</li>
+<li class="">Wikis</li>
+</ul>
+</li>
+<li class="">Repository insight graphs for pulse, contributors, traffic, commits, code - frequency, network, and forks</li>
+<li class="">The option to enable or disable GitHub Codespaces</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-enterprise">GitHub Enterprise<a href="#github-enterprise" class="hash-link" aria-label="Direct link to GitHub Enterprise" title="Direct link to GitHub Enterprise" translate="no">​</a></h4>
+<p>GitHub Enterprise accounts enjoy a greater level of support and extra security, compliance, and deployment controls.</p>
+<p>You can create one or more enterprise accounts. And you are assigned the role of <em>enterprise owner</em>. In that role, you can add and remove organizations to and from the enterprise account.</p>
+<p>In addition to the features available with GitHub Team, GitHub Enterprise includes:</p>
+<ul>
+<li class="">GitHub Enterprise Support</li>
+<li class="">More security, compliance, and deployment controls</li>
+<li class="">Authentication with security assertion markup language (SAML) single sign-on</li>
+<li class="">Access provisioning with SAML or System for Cross-domain Identity Management (SCIM)</li>
+<li class="">Deployment protection rules with GitHub Actions for private or internal - repositories GitHub Connect</li>
+<li class="">The option to purchase GitHub Advanced Security</li>
+</ul>
+<p>There are two different GitHub Enterprise options:</p>
+<ul>
+<li class="">GitHub Enterprise Server</li>
+<li class="">GitHub Enterprise Cloud</li>
+</ul>
+<p>The significant difference is that GitHub Enterprise Server (GHES) is a self-hosted solution that allows organizations to have a full control over their infrastructure.</p>
+<p>GitHub Enterprise Cloud includes a dramatic increase in both GitHub Actions minutes and GitHub Packages storage, including extra features:</p>
+<ul>
+<li class="">50,000 GitHub Actions minutes per month</li>
+<li class="">50-GB GitHub Packages storage</li>
+<li class="">A service level agreement for 99.9% monthly uptime</li>
+<li class="">Option to centrally manage policy and billing for multiple GitHub.com - organizations with an enterprise account</li>
+<li class="">Option to provision and manage the user accounts for your developers, by using Enterprise Managed Users</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-mobile-and-github-desktop">GitHub Mobile and GitHub Desktop<a href="#github-mobile-and-github-desktop" class="hash-link" aria-label="Direct link to GitHub Mobile and GitHub Desktop" title="Direct link to GitHub Mobile and GitHub Desktop" translate="no">​</a></h3>
+<p>GitHub Mobile and GitHub Desktop are options to access your GitHub account aside from github.com.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-mobile">GitHub Mobile<a href="#github-mobile" class="hash-link" aria-label="Direct link to GitHub Mobile" title="Direct link to GitHub Mobile" translate="no">​</a></h4>
+<p>Allows you to access securely your GitHub account from mobile devide to perform several activities as:</p>
+<ul>
+<li class="">Read, and review Pull Requests</li>
+<li class="">Receive notifications based on mentions</li>
+<li class="">Secure your Github.com account with two-factor authentication</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-desktop">GitHub Desktop<a href="#github-desktop" class="hash-link" aria-label="Direct link to GitHub Desktop" title="Direct link to GitHub Desktop" translate="no">​</a></h4>
+<p>GitHub Desktop is an open-source, stand-alone software application that simplify the usage of Git in GitHub through an user interface. Users can:</p>
+<ul>
+<li class="">Add and clone repositories</li>
+<li class="">Check out branches with pull requests and view CI statuses</li>
+<li class="">Compare changed images</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-billing">GitHub billing<a href="#github-billing" class="hash-link" aria-label="Direct link to GitHub billing" title="Direct link to GitHub billing" translate="no">​</a></h3>
+<p>GitHub bills separately for your personal account, and for each organization or enterprise account you own.
+Each bill is a combination of charges for your subscriptions and usage-based billing.</p>
+<ul>
+<li class=""><strong>Subscriptions</strong> include your account&#x27;s plan, such as GitHub Pro or GitHub Team, and paid products as GitHub Copilot and apps from GitHub Marketplace.</li>
+<li class=""><strong>Usage-based billing</strong> applies when the cost of a paid product depends on how much you use the product. For example, the cost of GitHub Actions depends on how many minutes your jobs spend running and how much storage your artifacts use.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="configure-code-scanning-on-github">Configure code scanning on GitHub<a href="#configure-code-scanning-on-github" class="hash-link" aria-label="Direct link to Configure code scanning on GitHub" title="Direct link to Configure code scanning on GitHub" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-code-scanning">What is code scanning?<a href="#what-is-code-scanning" class="hash-link" aria-label="Direct link to What is code scanning?" title="Direct link to What is code scanning?" translate="no">​</a></h3>
+<p>Code scanning uses CodeQL to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. You can use code scanning to find, triage, and prioritize fixes for existing problems in your code.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-code-scanning-with-codeql">About code scanning with CodeQL<a href="#about-code-scanning-with-codeql" class="hash-link" aria-label="Direct link to About code scanning with CodeQL" title="Direct link to About code scanning with CodeQL" translate="no">​</a></h3>
+<ul>
+<li class="">Use default setup to quickly configure CodeQL analysis for code scanning on your repository. The default setup handles choosing the languages to analyze, query suite to run, and events that trigger scans with the option to manually configure the languages and query suites.</li>
+<li class="">Use advanced setup to add the CodeQL workflow directly to your repository, using your workflow file with the <a href="https://github.com/github/codeql-action/" target="_blank" rel="noopener noreferrer" class="">github/codeql-action</a>.</li>
+<li class="">Run the CodeQL CLI directly in an external CI system and upload the results to GitHub.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="enable-code-scanning-with-third-party-tools">Enable code scanning with third party tools<a href="#enable-code-scanning-with-third-party-tools" class="hash-link" aria-label="Direct link to Enable code scanning with third party tools" title="Direct link to Enable code scanning with third party tools" translate="no">​</a></h3>
+<p>Instead of running code scanning in GitHub, you can perform analysis elsewhere and then upload the results. You can upload Static Analysis Results Interchange Format (SARIF) files generated outside GitHub.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-sarif-file-uploads-for-code-scanning">About SARIF file uploads for code scanning<a href="#about-sarif-file-uploads-for-code-scanning" class="hash-link" aria-label="Direct link to About SARIF file uploads for code scanning" title="Direct link to About SARIF file uploads for code scanning" translate="no">​</a></h3>
+<p>Github creates code/scanning alerts in a repository using information from SARIF files. You can generate SARIF files using many static analysis-security testing tools, including CodeQL.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction-to-github-copilot">Introduction to GitHub Copilot<a href="#introduction-to-github-copilot" class="hash-link" aria-label="Direct link to Introduction to GitHub Copilot" title="Direct link to Introduction to GitHub Copilot" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-copilot-your-ai-pair-programmer">GitHub Copilot, your AI pair programmer<a href="#github-copilot-your-ai-pair-programmer" class="hash-link" aria-label="Direct link to GitHub Copilot, your AI pair programmer" title="Direct link to GitHub Copilot, your AI pair programmer" translate="no">​</a></h3>
+<p>Powered by OpenAI Codex, GitHub Copilot acts as a pair programmer that can help you to create and manipulate code quickly, to focus on topics that really matter.
+GitHub Copilot offer three features:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="copilot-chat">Copilot chat<a href="#copilot-chat" class="hash-link" aria-label="Direct link to Copilot chat" title="Direct link to Copilot chat" translate="no">​</a></h4>
+<p>Like ChatGPT, Copilot chat can be used to make questions and queries considering the context that you are working with. Using GitHub Copilot in your favorite IDE, the Copilot chat feature is capable based on the file, and project that you are working, to provide accurate feedbacks and answers.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="copilot-for-pull-requests">Copilot for pull requests<a href="#copilot-for-pull-requests" class="hash-link" aria-label="Direct link to Copilot for pull requests" title="Direct link to Copilot for pull requests" translate="no">​</a></h4>
+<p>OpenAI GPT-4 model adds support in GitHub Copilot for AI-powered tags in pull-request description through a GitHub app installed by admins or repository owners. GitHub Copilot can automatically fills out pull request description based on the changed code, send on the pull request.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="copilot-for-the-cli">Copilot for the CLI<a href="#copilot-for-the-cli" class="hash-link" aria-label="Direct link to Copilot for the CLI" title="Direct link to Copilot for the CLI" translate="no">​</a></h4>
+<p>Developers spend most of their time on the terminal using several CLI&#x27;s, GitHub Copilot also support queries directly on the terminal to reduce the amount of times developers switch to another programs and sites.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="subscription-plans">Subscription plans<a href="#subscription-plans" class="hash-link" aria-label="Direct link to Subscription plans" title="Direct link to Subscription plans" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-copilot-business">GitHub Copilot Business<a href="#github-copilot-business" class="hash-link" aria-label="Direct link to GitHub Copilot Business" title="Direct link to GitHub Copilot Business" translate="no">​</a></h4>
+<p>GitHub Copilot Business allows you to control who can use GitHub Copilot in your business. The access can be granted for individuals and teams.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-copilot-enterprise">GitHub Copilot Enterprise<a href="#github-copilot-enterprise" class="hash-link" aria-label="Direct link to GitHub Copilot Enterprise" title="Direct link to GitHub Copilot Enterprise" translate="no">​</a></h4>
+<p>GitHub Copilot Enterprise is available for organizations through GitHub Enterprise Cloud. And the main different between GitHub Copilot Business is the plus layer of personalization for organizations.
+GitHub Copilot Enterprise can index an organization&#x27;s codebase for a deeper understanding and for suggestions that are more tailored. If offers access to GitHub Copilot customization to fine-tune private models for code completion.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="interact-with-copilot">Interact with Copilot<a href="#interact-with-copilot" class="hash-link" aria-label="Direct link to Interact with Copilot" title="Direct link to Interact with Copilot" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="inline-suggestions">Inline suggestions<a href="#inline-suggestions" class="hash-link" aria-label="Direct link to Inline suggestions" title="Direct link to Inline suggestions" translate="no">​</a></h4>
+<p>Inline suggestions are the most immediate form of assistance in Copilot. As you type, Copilot analyzes your code and context to offer real-time code completions. This feature predicts what you might want to write next and displays suggestions.</p>
+<ul>
+<li class="">To accept suggestions please <code>TAB</code> and to reject press <code>ESC</code></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="command-palette">Command palette<a href="#command-palette" class="hash-link" aria-label="Direct link to Command palette" title="Direct link to Command palette" translate="no">​</a></h4>
+<p>The command palette provides quick access to various functions in Copilot, so you can perform complex tasks with only a few keystrokes.</p>
+<ol>
+<li class="">Open the command palette in Visual Studio Code by selecting <code>Ctrl+Shift+P</code> or <code>Cmd+Shift+P</code> on Mac.</li>
+<li class="">Enter Copilot to see available commands</li>
+<li class="">Select actions like Explain This or Generate Unit Tests to get assistance</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="copilot-chat-again">Copilot chat again<a href="#copilot-chat-again" class="hash-link" aria-label="Direct link to Copilot chat again" title="Direct link to Copilot chat again" translate="no">​</a></h4>
+<p>Copilot chat is an interactive feature that enables you to communicate with Copilot by using natural language. You can ask questions or request code snippets, and Copilot provides responses based on your input.</p>
+<p>For example: &quot;How do I implement a binary search in Python?&quot;</p>
+<p>Copilot is ideal for exploring new coding concepts or getting help with unfamiliar syntax.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="inline-chat">Inline chat<a href="#inline-chat" class="hash-link" aria-label="Direct link to Inline chat" title="Direct link to Inline chat" translate="no">​</a></h4>
+<p>Inline chat enables context-specific conversations with Copilot directly within your code editor.</p>
+<ol>
+<li class="">Place the cursor where you want assistance</li>
+<li class="">Use the keyboard shortcut <code>Ctrl+I</code> or <code>Cmd+I</code> to open inline chat.\</li>
+<li class="">Ask questions or request changes specific to that code location</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="comments-to-code">Comments to code<a href="#comments-to-code" class="hash-link" aria-label="Direct link to Comments to code" title="Direct link to Comments to code" translate="no">​</a></h4>
+<p>Copilot uses natural language processing to convert comments into code.</p>
+<p>Here is an example:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Generate a hello world with Typescript</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    // Code written by GitHub Copilot based on the comments</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="multiple-suggestions">Multiple suggestions<a href="#multiple-suggestions" class="hash-link" aria-label="Direct link to Multiple suggestions" title="Direct link to Multiple suggestions" translate="no">​</a></h4>
+<p>For complex code snippets, Copilot can offer multiple alternatives.</p>
+<ol>
+<li class="">When Copilot offers a suggestion, look for the light bulb icon.</li>
+<li class="">Select the icon or use <code>Alt+]</code> or <code>Option+]</code> to cycle through alternatives</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="explanations">Explanations<a href="#explanations" class="hash-link" aria-label="Direct link to Explanations" title="Direct link to Explanations" translate="no">​</a></h4>
+<p>Understanding existing code is crucial, especially in large projects. You can use the <strong>Explain This</strong> feature to get explanations for code snippets.</p>
+<ol>
+<li class="">Select a block of code</li>
+<li class="">Right-click the code block, and then select Copilot: <strong>Explain This</strong> on the shortcut  menu</li>
+<li class="">Read the explanation that Copilot provides for the selected code</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="code-with-github-codespaces">Code with GitHub Codespaces<a href="#code-with-github-codespaces" class="hash-link" aria-label="Direct link to Code with GitHub Codespaces" title="Direct link to Code with GitHub Codespaces" translate="no">​</a></h2>
+<p>GitHub Codespaces is configurable, allowing you to create a customized development environment for your project.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="create-a-codespace">Create a Codespace<a href="#create-a-codespace" class="hash-link" aria-label="Direct link to Create a Codespace" title="Direct link to Create a Codespace" translate="no">​</a></h3>
+<p>Codespaces can be created on GitHub.com, in Visual Studio Code, or by GitHub CLI. And there are four ways to create a Codespace:</p>
+<ul>
+<li class="">From a GitHub template or any template repository on GitHub.com to start a new project</li>
+<li class="">From a branch in your repository, for new feature work</li>
+<li class="">From an open pull request, to explore work-in-progress</li>
+<li class="">From a commit in a repository&#x27;s history to investigate a bug at a specific point in time</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="codespace-creation-process">Codespace creation process<a href="#codespace-creation-process" class="hash-link" aria-label="Direct link to Codespace creation process" title="Direct link to Codespace creation process" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="code space creation process" src="/assets/images/gh_codespaces_create-b15bd1c4a0a1b077f052547d7cc21a0e.png" width="1138" height="811" class="img_ev3q"></p>
+<p>When you create a GitHub Codespace, four processes occur:</p>
+<ol>
+<li class="">A virtual machine and storage are assigned to your Codespace</li>
+<li class="">A container is created</li>
+<li class="">A connection to the Codespace is mage</li>
+<li class="">A post-creation setup is made</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="personalize-your-codespace">Personalize your Codespace<a href="#personalize-your-codespace" class="hash-link" aria-label="Direct link to Personalize your Codespace" title="Direct link to Personalize your Codespace" translate="no">​</a></h3>
+<p>Codespaces support several personalizations in line with your environment requirements. Follow some of the customizations:</p>
+<ul>
+<li class=""><strong>Settings sync</strong>: You can synchronize your VS Code settings between your desktop application with VS Code web client</li>
+<li class=""><strong>Dotfiles</strong>: You can a dotfiles repository to specify scripts, shell preferences, and other configurations</li>
+<li class=""><strong>Change your shell</strong>: You can define your preferred shell</li>
+<li class=""><strong>Set a region</strong>: A region can be defined to host your code space</li>
+<li class=""><strong>Timeout configuration</strong>: Configure a timeout to stop your Codespace - Default 30 minutes</li>
+<li class="">Configure automatic deletion: Inactive Codespaces are automatically deleted. You can configure how long your Codespace is retained, up to a maximum of 30 days</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="codespaces-versus-githubdev-editor">Codespaces versus GitHub.dev editor<a href="#codespaces-versus-githubdev-editor" class="hash-link" aria-label="Direct link to Codespaces versus GitHub.dev editor" title="Direct link to Codespaces versus GitHub.dev editor" translate="no">​</a></h3>
+<p>You can use GitHub.dev to navigate files and source code repositories from GitHub, and commit code changes. If you want to do more heavy lifting like testing your code, use GitHub Codespaces. It has compute associate with it so you can build and run your code, and have terminal access.</p>
+<p>You can start your workflow in GitHub.dev editor and continue working on Codespaces to build your code or debug it.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="manage-your-work-with-github-projects">Manage your work with GitHub Projects<a href="#manage-your-work-with-github-projects" class="hash-link" aria-label="Direct link to Manage your work with GitHub Projects" title="Direct link to Manage your work with GitHub Projects" translate="no">​</a></h2>
+<p>GitHub Projects is a space inside GitHub, where the work can be organized, planned, and executed.</p>
+<p>There are several enhancements on the new Project experience. Which enables more customization.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="creating-an-organization-level-project">Creating an organization-level project<a href="#creating-an-organization-level-project" class="hash-link" aria-label="Direct link to Creating an organization-level project" title="Direct link to Creating an organization-level project" translate="no">​</a></h3>
+<p>It is possible to create a project for your organization, following this steps:</p>
+<ol>
+<li class="">In the top right corner of GitHub.com, select your profile photo, then select Your organizations.</li>
+<li class="">Scroll down to select the organization for your new Project.</li>
+<li class="">Navigate from the Overview tab to the Projects tab.</li>
+<li class="">Select the green button labeled New Project.</li>
+<li class="">A pop-up prompts you to select either a template or start from scratch. Let&#x27;s choose the Start from scratch option and select Table.</li>
+<li class="">Select the green Create project button.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="add-an-existing-issue-and-pull-request-to-your-project">Add an existing issue and pull request to your project<a href="#add-an-existing-issue-and-pull-request-to-your-project" class="hash-link" aria-label="Direct link to Add an existing issue and pull request to your project" title="Direct link to Add an existing issue and pull request to your project" translate="no">​</a></h3>
+<p>Simply copy the issue/pull request URL on the text input field to create new issue.</p>
+<p><img decoding="async" loading="lazy" alt="adding existing issue" src="/assets/images/gh_new_issue-90a6e6b6c56b7d3b0ae7765ece43531f.png" width="528" height="161" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="contribute-to-an-open-source-project-on-github">Contribute to an open-source project on GitHub<a href="#contribute-to-an-open-source-project-on-github" class="hash-link" aria-label="Direct link to Contribute to an open-source project on GitHub" title="Direct link to Contribute to an open-source project on GitHub" translate="no">​</a></h2>
+<p>You can find a topic of interest using <a href="https://github.com/search" target="_blank" rel="noopener noreferrer" class="">GitHub search</a> and filtering by Topics on the right side.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="familiarize-yourself-with-an-open-source-project">Familiarize yourself with an open-source project<a href="#familiarize-yourself-with-an-open-source-project" class="hash-link" aria-label="Direct link to Familiarize yourself with an open-source project" title="Direct link to Familiarize yourself with an open-source project" translate="no">​</a></h3>
+<p>Open-source projects usually have these documents at the top level of the repository:</p>
+<ul>
+<li class="">LICENSE - The project must contain an open-source license</li>
+<li class="">README - Serves as a welcome page for the project</li>
+<li class="">CONTRIBUTING - Guidance on how to contribute to the project</li>
+<li class="">CODE_OF_CONDUCT - Rules for community members</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sponsor-a-project">Sponsor a project<a href="#sponsor-a-project" class="hash-link" aria-label="Direct link to Sponsor a project" title="Direct link to Sponsor a project" translate="no">​</a></h3>
+<p>You can financially support the folks who build and maintain the open-source ecosystem through code.</p>
+<p><img decoding="async" loading="lazy" alt="sponsor a project" src="/assets/images/gh_sponsor_project-38d1d4272b956556a66060110fd6b3e4.png" width="1098" height="816" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="communicate-your-intent-to-maintainers">Communicate your intent to maintainers<a href="#communicate-your-intent-to-maintainers" class="hash-link" aria-label="Direct link to Communicate your intent to maintainers" title="Direct link to Communicate your intent to maintainers" translate="no">​</a></h3>
+<p>You should always start by communicating your intent to contribute before you do any actual work.</p>
+<ul>
+<li class="">
+<p>If you want to work on an existing issue, check that nobody is assigned to it by looking at the <strong>Assignees</strong> section, also check the <strong>Linked pull requests</strong></p>
+</li>
+<li class="">
+<p><a href="https://github.com/firstcontributions/first-contributions" target="_blank" rel="noopener noreferrer" class="">First contributor repository</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="knowledge-checks">Knowledge checks<a href="#knowledge-checks" class="hash-link" aria-label="Direct link to Knowledge checks" title="Direct link to Knowledge checks" translate="no">​</a></h2>
+<ul>
+<li class="">Which of the following scenarios is a common use case for a version control system?<!-- -->
+<ul>
+<li class="">Making experimental changes to your project in an isolated branch.</li>
+</ul>
+</li>
+<li class="">What is another name for a version control system?<!-- -->
+<ul>
+<li class="">Software configuration management (SCM) system</li>
+</ul>
+</li>
+<li class="">What’s the difference between Git and GitHub?<!-- -->
+<ul>
+<li class="">Git lets you work with one or more local branches and push changes to a remote repository. GitHub acts as the remote repository, which is accessed through a website or command-line tools.</li>
+</ul>
+</li>
+<li class="">What Git command gives information about how to use Git?<!-- -->
+<ul>
+<li class=""><code>git help</code></li>
+</ul>
+</li>
+<li class="">What is the best way to report a bug to a GitHub project?<!-- -->
+<ul>
+<li class="">Search for the bug in the project&#x27;s existing issues, and create a new one if it hasn&#x27;t been reported yet.</li>
+</ul>
+</li>
+<li class="">Suppose you created a bug fix on a new branch and want it to become part of the next production build generated from the <code>main</code> branch. What should you do next?<!-- -->
+<ul>
+<li class="">Create a pull request to merge your new branch into the <code>main</code> branch.</li>
+</ul>
+</li>
+<li class="">Suppose you&#x27;d like to work with a project on GitHub, but you don&#x27;t have write access to the project. What can you do to contribute?<!-- -->
+<ul>
+<li class="">Fork the project&#x27;s repository to your GitHub account, clone the forked repository to your local machine, push changes to your repository, and submit a pull request to the target (upstream) repository.</li>
+</ul>
+</li>
+<li class="">What&#x27;s the difference between GitHub organization accounts and GitHub personal/user accounts?<!-- -->
+<ul>
+<li class="">Organizational accounts are shared accounts, while personal/user accounts are for individuals.</li>
+</ul>
+</li>
+<li class="">What&#x27;s the best reason to decide to upgrade to the GitHub Enterprise product?<!-- -->
+<ul>
+<li class="">Because you want to centrally manage users and repositories across multiple organizations.</li>
+</ul>
+</li>
+<li class="">What&#x27;s the purpose of a team?<!-- -->
+<ul>
+<li class="">A team is intended to reflect a company or group&#x27;s structure. It&#x27;s used to provide cascading access permissions and make it easy to notify all team members via mentions.</li>
+</ul>
+</li>
+<li class="">What&#x27;s a function you can execute on GitHub Mobile?<!-- -->
+<ul>
+<li class="">Manage, triage, and clear notifications from github.com</li>
+</ul>
+</li>
+<li class="">When code scanning is enabled, what is one default event that triggers a scan?<!-- -->
+<ul>
+<li class="">Pushing a change</li>
+</ul>
+</li>
+<li class="">Which of the following are the tools used to upload a SARIF file?<!-- -->
+<ul>
+<li class="">The tools used are GitHub Actions, the code scanning API, and the CodeQL CLI</li>
+</ul>
+</li>
+<li class="">What is the difference between scheduled versus triggered events in code scanning?<!-- -->
+<ul>
+<li class="">Scheduled events run based on a specified schedule and triggered events run on code events such a push</li>
+</ul>
+</li>
+<li class="">What is GitHub Copilot?<!-- -->
+<ul>
+<li class="">GitHub Copilot is an AI pair programmer that you can use to get code suggestions</li>
+</ul>
+</li>
+<li class="">What are the supported IDE extensions for GitHub Copilot?<!-- -->
+<ul>
+<li class="">VS Code, Visual Studio, Neovim, and JetBrains</li>
+</ul>
+</li>
+<li class="">What is the difference between GitHub Copilot Business and GitHub Copilot Enterprise?<!-- -->
+<ul>
+<li class="">GitHub Copilot Enterprise has an extra layer of personalization. Organizations use their own codebase to train GitHub Copilot.</li>
+</ul>
+</li>
+<li class="">Which directory is the clone placed in after creating a Codespace?<!-- -->
+<ul>
+<li class="">´/workspaces´</li>
+</ul>
+</li>
+<li class="">What&#x27;s the maximum number of Codespaces that you can create per repository or branch?<!-- -->
+<ul>
+<li class="">You can create an unlimited number of Codespaces per repository or branch, depending upon available space. When you reach an upper amount of resources, a message displays that an existing Codespace needs to removed/deleted before a new Codespace can be created.</li>
+</ul>
+</li>
+<li class="">What happens when Codespace loses internet connectivity?<!-- -->
+<ul>
+<li class="">If the connection to the internet is lost while working in a Codespace, you aren&#x27;t able to access your Codespace.</li>
+</ul>
+</li>
+<li class="">What defines the beginning of a Codespace&#x27;s lifecycle?<!-- -->
+<ul>
+<li class="">A Codespace&#x27;s lifecycle begins when you create a Codespace and ends when you delete it.</li>
+</ul>
+</li>
+<li class="">What Project descriptor automatically saves when you change it?<!-- -->
+<ul>
+<li class="">Project name</li>
+</ul>
+</li>
+<li class="">What does an iteration field help you do in Projects?<!-- -->
+<ul>
+<li class="">Allows you to create sequential phases of your project and group issues and pull requests based on the phase.</li>
+</ul>
+</li>
+<li class="">What field can you use in order to make a Priority grouping like High, Medium, and Low in your Project?<!-- -->
+<ul>
+<li class="">Single select</li>
+</ul>
+</li>
+<li class="">What is the easiest way to add automation to your Project?<!-- -->
+<ul>
+<li class="">Built-in Automation</li>
+</ul>
+</li>
+<li class="">What is the name of the section where you can change the visibility of your Project, close your Project, or delete your Project?<!-- -->
+<ul>
+<li class="">Danger zone</li>
+</ul>
+</li>
+<li class="">Which of the following Markdown snippets produces the text Hello, world! in bold italics?<!-- -->
+<ul>
+<li class=""><em><strong>Hello, world!</strong></em></li>
+</ul>
+</li>
+<li class="">How do you print certain characters, like asterisks (*) and underscores (_), literally on your output?<!-- -->
+<ul>
+<li class="">Escape them with a backslash, like * or _</li>
+</ul>
+</li>
+<li class="">Suppose there&#x27;s an HTML snippet that you want to include on your GitHub Pages web site, but Markdown doesn&#x27;t offer a way to render it. What should you do?<!-- -->
+<ul>
+<li class="">Just add the HTML inline</li>
+</ul>
+</li>
+<li class="">What is the best place on a GitHub repository to find where you can help a project?<!-- -->
+<ul>
+<li class="">The README file</li>
+</ul>
+</li>
+<li class="">What is the preferred way to ask for help or reviews on a pull request?<!-- -->
+<ul>
+<li class="">Add comment in the pull request</li>
+</ul>
+</li>
+<li class="">What is needed before you can create a pull request on GitHub?<!-- -->
+<ul>
+<li class="">Fork a repo, clone it, commit changes, and push to your fork</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="commands-tested-on-the-sandbox">Commands tested on the sandbox<a href="#commands-tested-on-the-sandbox" class="hash-link" aria-label="Direct link to Commands tested on the sandbox" title="Direct link to Commands tested on the sandbox" translate="no">​</a></h2>
+<ul>
+<li class="">Initiate a git configuration setting the branch as main</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git init -b main</span><br></span></code></pre></div></div>
+<ul>
+<li class="">Create a new branch and check it out</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git checkout -b newBranchName</span><br></span></code></pre></div></div>
+<ul>
+<li class="">Creating a CodeQL database for the first scan</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">codeql database create .codeql --language=javascript-typescript</span><br></span></code></pre></div></div>
+<ul>
+<li class="">Running analyze</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">codeql database analyze .codeql --format=sarif-latest --output=./codeql-analyze.sarif</span><br></span></code></pre></div></div>
+<ul>
+<li class="">Upload SARIF results</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">codeql github upload-results --repository=yuribreion1/second-brain --ref=refs/heads/main --sarif=codeql-analyze.sarif</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="github-foundations-practice-test">GitHub Foundations Practice Test<a href="#github-foundations-practice-test" class="hash-link" aria-label="Direct link to GitHub Foundations Practice Test" title="Direct link to GitHub Foundations Practice Test" translate="no">​</a></h2>
+<ul>
+<li class="">How can you define guiding protocols for users intending to submit bug reports or propose new features in your repository so they know what information to fill-in?<!-- -->
+<ul>
+<li class="">Create issue templates</li>
+</ul>
+</li>
+<li class="">What are the different repository visibility options?<!-- -->
+<ul>
+<li class="">Private, Public and Internal (Enterprise only)</li>
+</ul>
+</li>
+<li class="">What are the use cases for labels?<!-- -->
+<ul>
+<li class="">Categorizing issues and pull requests</li>
+</ul>
+</li>
+<li class="">What is the GitHub Flow?<!-- -->
+<ul>
+<li class="">It refers to a branch-based workflow where developers create a branch for each new change they are working on, and then open pull requests to get their code reviewed, tested, and merged into the main branch</li>
+</ul>
+</li>
+<li class="">What is the meaning of the word <code>distributed</code> in distributed version control system?<!-- -->
+<ul>
+<li class="">It means that developers can have a full copy of the repository and its history on their local machine</li>
+</ul>
+</li>
+<li class="">Your project requires appropriate hardware to run. Can you customize the amount of CPU cores that will be allocated to your GitHub Codespace environment?<!-- -->
+<ul>
+<li class="">Yes, you can choose an alternative machine type either when you create a codespace or at any time after you have created a codespace</li>
+</ul>
+</li>
+<li class="">Which of these statements best describes what GitHub is?<!-- -->
+<ul>
+<li class="">GitHub is a platform that uses Git as its core technology and adds features that make collaboration and code management easier</li>
+</ul>
+</li>
+<li class="">What is the purpose of a <code>CODEOWNERS</code> file?<!-- -->
+<ul>
+<li class="">The <code>CODEOWNERS</code> file allows you to define individuals or teams that are responsible for specific areas of the codebase or its entirety</li>
+</ul>
+</li>
+<li class="">What is a repository in GitHub?<!-- -->
+<ul>
+<li class="">It is a place where you can store your code, your files, and each files revision hisotry</li>
+</ul>
+</li>
+<li class="">What is the difference between GitHub projects and GitHub projects classic?<!-- -->
+<ul>
+<li class="">GitHub Projects is a the new GitHub experience which offers a lot of new features and improvements over the older GitHub Projects classic</li>
+</ul>
+</li>
+<li class="">Can you disable the issues tab on a repository?<!-- -->
+<ul>
+<li class="">Yes</li>
+</ul>
+</li>
+<li class="">What are the different forms of 2FA or MFA supported by GitHub?<!-- -->
+<ul>
+<li class="">Security key, Text message, Time-based one-time password (TOTP), Passkey, GitHub mobile</li>
+</ul>
+</li>
+<li class="">What is the role of an organization moderator?<!-- -->
+<ul>
+<li class="">Moderators are organization members who, in addition to their permission as members, are allowed to block and unblock non-member contributors, set interaction limits, and hide comments in public repositories owned by the organization</li>
+</ul>
+</li>
+<li class="">What are Enterprise Managed Users?<!-- -->
+<ul>
+<li class="">It is a GitHub Enterprise feature that allows you to manage user access from an external identity provider such as Azure AD or Okta</li>
+</ul>
+</li>
+<li class="">Which of the following actions cannot be performed directly from GitHub Desktop?<!-- -->
+<ul>
+<li class="">Managing GitHub Actions</li>
+</ul>
+</li>
+<li class="">What are pinned repositories on GitHub?<!-- -->
+<ul>
+<li class="">Pinned repositories are repositories that you have pinned to the top of your GitHub profile</li>
+</ul>
+</li>
+<li class="">Which of the following actions can you perform on a GitHub Discussion? (Choose three.)<!-- -->
+<ul>
+<li class="">Pin a discussion, Convert it to an issue, Transfer it to another repository discussion</li>
+</ul>
+</li>
+<li class="">What is the main difference between an organization member and an outside collaborator for a repository owned by that organization?<!-- -->
+<ul>
+<li class="">Outside collaborators have repository-level access but are not part of the organization; members belong to the organization and may have broader access and roles</li>
+</ul>
+</li>
+<li class="">If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?<!-- -->
+<ul>
+<li class="">Saved replies</li>
+</ul>
+</li>
+<li class="">What are the differences between GitHub Copilot Individual and GitHub Copilot Business?<!-- -->
+<ul>
+<li class="">GitHub Copilot Individual can only be used by personal accounts and GitHub Copilot Business is used by organizations and enteprises</li>
+</ul>
+</li>
+<li class="">What is the relation between Git and GitHub?<!-- -->
+<ul>
+<li class="">Git is a distributed version control system and GitHub is a platform that uses Git as its core technology</li>
+</ul>
+</li>
+<li class="">What are the different possible lifecycle phases for a GitHub Codespaces?<!-- -->
+<ul>
+<li class="">Create, Delete</li>
+</ul>
+</li>
+<li class="">What features is unique to GitHub Desktop compared to github.com?<!-- -->
+<ul>
+<li class="">Visualize branch histories in a graphical interface</li>
+</ul>
+</li>
+<li class="">What syntax is used in GitHub Markdown to create a task list?<!-- -->
+<ul>
+<li class=""><code>- [ ] and - [x]</code></li>
+</ul>
+</li>
+<li class="">What is the effect of adding a line <code>Closes #11</code> to the pull request description?<!-- -->
+<ul>
+<li class="">Once that pull request is merged, the issue #11 will be closed automatically</li>
+</ul>
+</li>
+<li class="">Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?<!-- -->
+<ul>
+<li class="">Project Insights</li>
+</ul>
+</li>
+<li class="">Which of these statements accurately describes a difference between personal accounts and organization accounts on GitHub?<!-- -->
+<ul>
+<li class="">An organization account can have multiple owners and members, whereas a personal account belongs to a single user only</li>
+</ul>
+</li>
+<li class="">Which of these actions will make sure that prior to any push to the <code>main</code> branch, the changes have been approved by at least two people? (Choose three.)<!-- -->
+<ul>
+<li class="">Create a branch protection rule for <code>main</code> branch, On the branch protection rule, require at least 2 approvals before merging a pull request, Enforce status checks are passing before merging a pull request to the <code>main</code> branch</li>
+</ul>
+</li>
+<li class="">Which Markdown element is not correctly paired with its syntax?<!-- -->
+<ul>
+<li class="">Inline code - <code>&#x27;&#x27;&#x27;code&#x27;&#x27;&#x27;</code></li>
+</ul>
+</li>
+<li class="">Why would a repository owner want to use milestones? (Choose two.)<!-- -->
+<ul>
+<li class="">To associate issues and pull requests with specific project phases, To have an overview of how much work is left to complete a project phase</li>
+</ul>
+</li>
+<li class="">Which of these can you customize in a Codespaces <code>.devcontainer/devcontainer.json</code> configuration file? (Choose three.)<!-- -->
+<ul>
+<li class="">Operating system or base image, Shell configuration, Codespace display name</li>
+</ul>
+</li>
+<li class="">How can you start using GitHub Copilot after activating the GitHub Copilot subscription?<!-- -->
+<ul>
+<li class="">Setup GitHub Copilot in one of the supported IDEs such as Visual Studio Code or JetBrains and start coding</li>
+</ul>
+</li>
+<li class="">Who are repository collaborators?<!-- -->
+<ul>
+<li class="">Collaborators are people who have been granted write access to a repository</li>
+</ul>
+</li>
+<li class="">Who can setup billig or assign billing managers for an organization? (Select three)<!-- -->
+<ul>
+<li class="">Owner at the organization level, Owner at the enterprise level, Billing managers at the organization level</li>
+</ul>
+</li>
+<li class="">What is the GitHub Marketplace?<!-- -->
+<ul>
+<li class="">GitHub Marketplace is a place where developers can find tools that help build software right alongside their code</li>
+</ul>
+</li>
+<li class="">Which of the GitHub features best serves as a simple way to share small code snippets with others?<!-- -->
+<ul>
+<li class="">Gists</li>
+</ul>
+</li>
+<li class="">What is the role of an organization security manager?<!-- -->
+<ul>
+<li class="">Security managers are organizational members who can view security alerts and manage settings for code security across your organization, as well as read permission to all repositories in the organization</li>
+</ul>
+</li>
+<li class="">What is a fork in GitHub?<!-- -->
+<ul>
+<li class="">A fork is a personal copy of another user repository that lives on your account</li>
+</ul>
+</li>
+<li class="">What is InnerSource?<!-- -->
+<ul>
+<li class="">InnerSource refers to the practice of applying open source principles within an organization</li>
+</ul>
+</li>
+<li class="">What can you find in the security tab of a repository?<!-- -->
+<ul>
+<li class="">A security overview of that repository such as vulnerabilities in dependencies, code scanning results, and secret scanning alerts</li>
+</ul>
+</li>
+<li class="">How can you enforce status checks passing before merging a pull request to the <code>main</code> branch?<!-- -->
+<ul>
+<li class="">By creating a branch protecting rule</li>
+</ul>
+</li>
+<li class="">What is the GitHub Sponsors program?<!-- -->
+<ul>
+<li class="">It is a way to financially support the developers of the open source projects</li>
+</ul>
+</li>
+<li class="">What is a git commit?<!-- -->
+<ul>
+<li class="">A commit is a snapshot of a repository at a specific point in time</li>
+</ul>
+</li>
+<li class="">How can you work together with a friend of yours on a repository that you have created on your personal GitHub account?<!-- -->
+<ul>
+<li class="">Go to the repository settings and invite him as a collaborator</li>
+</ul>
+</li>
+<li class="">Which of these workflows are built-in automations in GitHub Projects? (Choose two.)<!-- -->
+<ul>
+<li class="">When issues or pull requests in your project are closed, their status is set to Done</li>
+<li class="">When pull requests in your project are merged, their status is set to Done</li>
+</ul>
+</li>
+<li class="">Which of these statements about GitHub Pages is correct?<!-- -->
+<ul>
+<li class="">GitHub Pages enables you to host static sites from a GitHub repository</li>
+</ul>
+</li>
+<li class="">Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?<!-- -->
+<ul>
+<li class="">GitHub Copilot</li>
+</ul>
+</li>
+<li class="">Is there a free version of GitHub for organizations?<!-- -->
+<ul>
+<li class="">Yes</li>
+</ul>
+</li>
+<li class="">What is a GitHub Codespace?<!-- -->
+<ul>
+<li class="">It&#x27;s a preconfigured development environment specifically setup for a repository. It allows you immediately start writing code for a project without having to setup a local development environment</li>
+</ul>
+</li>
+<li class="">What are the different available options for adding issues and pull requests to a GitHub Project board?<!-- -->
+<ul>
+<li class="">Individually, automatically, or in bulk</li>
+</ul>
+</li>
+<li class="">Which of the following roles are available for a repository at the organization level on GitHub? (Choose five.)<!-- -->
+<ul>
+<li class="">Read</li>
+<li class="">Write</li>
+<li class="">Maintain</li>
+<li class="">Admin</li>
+<li class="">Triage</li>
+</ul>
+</li>
+<li class="">Is GitHub Copilot free to use?<!-- -->
+<ul>
+<li class="">Yes, if you are a student, teacher, or maintainer of a popular open source project</li>
+</ul>
+</li>
+<li class="">Which of these statements best describes a version control system?<!-- -->
+<ul>
+<li class="">It is a system that tracks the history of changes made to a collection of files</li>
+</ul>
+</li>
+<li class="">GitHub Action workflows are triggered by events. Which of these are valid events that GitHub Actions support? (Choose two.)<!-- -->
+<ul>
+<li class="">A pull request is opened</li>
+<li class="">A commit is pushed to a branch</li>
+</ul>
+</li>
+<li class="">Which feature provides pre-built charts or visualizations for repository activity and health?<!-- -->
+<ul>
+<li class="">Insights tab</li>
+</ul>
+</li>
+<li class="">Which of the following best describes GitHub secret scanning?<!-- -->
+<ul>
+<li class="">A feature that searches repositories for known secret formats to prevent accidental exposure of sensitive data</li>
+</ul>
+</li>
+<li class="">What are the different permission levels for a repository owned by a personal account? (Choose two.)<!-- -->
+<ul>
+<li class="">Collaborator</li>
+<li class="">Repository owner</li>
+</ul>
+</li>
+<li class="">What is GitHub Mobile?<!-- -->
+<ul>
+<li class="">It is a mobile app for iOS and Android that allows you to work with GitHub from your phone</li>
+</ul>
+</li>
+<li class="">How does GitHub help people that want to write proper issue and pull request comments but don&#x27;t know Markdown syntax?<!-- -->
+<ul>
+<li class="">There is a text formatting toolbar on issue and pull request comment forms which generates Markdown for you</li>
+</ul>
+</li>
+<li class="">Where can you disable repository features such as issues, wikis or projects on a repository that you own?<!-- -->
+<ul>
+<li class="">In the repository settings</li>
+</ul>
+</li>
+<li class="">What are the two available options when you no longer need to use a Project?<!-- -->
+<ul>
+<li class="">Close and delete</li>
+</ul>
+</li>
+<li class="">What is a GitHub Codespace deep link?<!-- -->
+<ul>
+<li class="">It is a link that points to a specific GitHub.com page that allows you to create a new GitHub Codespace and select specific configuration</li>
+</ul>
+</li>
+<li class="">What are the possible GitHub account types? (Select three.)<!-- -->
+<ul>
+<li class="">Personal accounts</li>
+<li class="">Organization accounts</li>
+<li class="">Enterprise accounts</li>
+</ul>
+</li>
+<li class="">Who should have 2 Factor Authentication enabled on GitHub?<!-- -->
+<ul>
+<li class="">All GitHub users</li>
+</ul>
+</li>
+<li class="">What is the name of GitHub&#x27;s continuous integration and continuous delivery (CI/CD) platform?<!-- -->
+<ul>
+<li class="">GitHub Actions</li>
+</ul>
+</li>
+<li class="">Which of these statements about saved replies are true? (Choose two.)<!-- -->
+<ul>
+<li class="">Saved replies are comments that you can reuse in issues and pull requests</li>
+<li class="">Saved replies are only available to repository owners which can setup automated replies to issues and pull requests</li>
+</ul>
+</li>
+<li class="">What is CodeQL?<!-- -->
+<ul>
+<li class="">A code analysis tool</li>
+</ul>
+</li>
+<li class="">What are the different options that allow you to automate operations in your GitHub Project? (Choose three.)<!-- -->
+<ul>
+<li class="">GitHub GraphQL API</li>
+<li class="">GitHub Actions</li>
+<li class="">Project workflows</li>
+</ul>
+</li>
+<li class="">Which of these is a common use case for GitHub Actions?<!-- -->
+<ul>
+<li class="">Running automated tests prior to merging a pull request</li>
+</ul>
+</li>
+<li class="">What are GitHub&#x27;s slash commands?<!-- -->
+<ul>
+<li class="">It is a way to quickly insert complex Markdown into your pull request or issue comments and description</li>
+</ul>
+</li>
+<li class="">What is one of the main benefits for using a Personal Access Token (PAT) instead of a standard username and password for GitHub authentication?<!-- -->
+<ul>
+<li class="">PAT can be used for authentication to GitHub when using the GitHub API or the command line. Users generate a token via the GitHub settings option, and tie the token permission to a repository or organization</li>
+</ul>
+</li>
+<li class="">Which of the following are valid states for a pull request on GitHub?<!-- -->
+<ul>
+<li class="">Merged</li>
+<li class="">Closed</li>
+<li class="">Draft</li>
+<li class="">Open</li>
+</ul>
+</li>
+<li class="">What improvement do issue forms bring over issue templates?<!-- -->
+<ul>
+<li class="">Issue forms allow for users to be prompted for information when creating an issue and then have that information automatically added to the issue</li>
+</ul>
+</li>
+<li class="">Which of these is a practice that encourages collaboration, visibility and sharing of code among different teams within an organization?<!-- -->
+<ul>
+<li class="">InnerSource</li>
+</ul>
+</li>
+<li class="">Which GitHub pricing plan offers self-hosted deployment of GitHub?<!-- -->
+<ul>
+<li class="">Enterprise</li>
+</ul>
+</li>
+<li class="">What are some actions you can do in regards to Project Templates in your organization? (Choose three.)<!-- -->
+<ul>
+<li class="">Create a new template to be used as a base for new projects</li>
+<li class="">Configure recommended templates to your organization members</li>
+<li class="">With admin or write permissions, copy an existing project as a template</li>
+</ul>
+</li>
+<li class="">You want to merge changes from branch feature-a into main and you are creating a pull request. Which branch should be the base branch and which branch should be the compare branch?<!-- -->
+<ul>
+<li class=""><code>main</code> is the base branch and <code>feature-a</code> is the compare branch</li>
+</ul>
+</li>
+<li class="">What are the different deployment options for GitHub Enterprise? (Select two.)<!-- -->
+<ul>
+<li class="">GitHub Enterprise Cloud</li>
+<li class="">GitHub Enterprise Server</li>
+</ul>
+</li>
+<li class="">What is/are the common GitHub pricing plan(s) for both personal and organization accounts?<!-- -->
+<ul>
+<li class="">Team</li>
+</ul>
+</li>
+<li class="">Which of these is true regarding custom fields for items in GitHub Projects?<!-- -->
+<ul>
+<li class="">Custom fields enable the addition of metadata beyond the built-in options, such as target dates and iteration fields</li>
+</ul>
+</li>
+<li class="">What language is used to write comments on GitHub issues and pull requests?<!-- -->
+<ul>
+<li class="">Markdown</li>
+</ul>
+</li>
+<li class="">What are the different possible lifecycle phases for a GitHub Codespace?<!-- -->
+<ul>
+<li class="">Create, Delete</li>
+</ul>
+</li>
+<li class="">Which of these can make a repository more discoverable? (Choose three.)<!-- -->
+<ul>
+<li class="">Giving the repository a descriptive name</li>
+<li class="">Setting up topics for the repository</li>
+<li class="">A well-crafted collection of markdown documents like <code>README.md</code>, <code>CONTRIBUTING.md</code> and others</li>
+</ul>
+</li>
+<li class="">Who can setup billing or assign billing managers for an organization? (Select three.)<!-- -->
+<ul>
+<li class="">Owner at the enterprise level</li>
+<li class="">Owner at the organization level</li>
+<li class="">Billing managers at the organization level</li>
+</ul>
+</li>
+<li class="">What are the possible statuses for a pull request review? (Choose three.)<!-- -->
+<ul>
+<li class="">Close</li>
+<li class="">Deny</li>
+<li class="">Approve</li>
+</ul>
+</li>
+<li class="">On your personal GitHub dashboard you received a notification that user <code>octocat</code> has created a new repository <code>octocat/my-repo</code>. Why did you receive that notification?<!-- -->
+<ul>
+<li class="">Because you are following the user <code>octocat</code></li>
+</ul>
+</li>
+<li class="">What GitHub feature allows the creation of preconfigured development environments where all necessary tools and dependencies to contribute to a repository are installed?<!-- -->
+<ul>
+<li class="">GitHub Codespaces</li>
+</ul>
+</li>
+<li class="">Which roles in an organization can view and manage security alerts for private repositories?<!-- -->
+<ul>
+<li class="">Organization owners and Security managers</li>
+</ul>
+</li>
+<li class="">Under which GitHub pricing plan can you create an unlimited number of public repositories?<!-- -->
+<ul>
+<li class="">All of them</li>
+</ul>
+</li>
+<li class="">Which advanced search operator combination would you use to find public repositories with more than 100 stars that mention &#x27;docker&#x27; in their name?<!-- -->
+<ul>
+<li class=""><code>is:public name:docker stars:100</code></li>
+</ul>
+</li>
+<li class="">Which GitHub Project layout would best serve as a Kanban board?<!-- -->
+<ul>
+<li class="">Board layout</li>
+</ul>
+</li>
+<li class="">Which of these files can customize your GitHub profile?<!-- -->
+<ul>
+<li class="">profile is not customizable through files but through the account settings</li>
+</ul>
+</li>
+<li class="">If a GitHub Discussion is converted into an Issue and the issue is closed or referred to using its corresponding # number, will the discussion be modified?<!-- -->
+<ul>
+<li class="">Yes</li>
+</ul>
+</li>
+<li class="">What is a GitHub Pro plan?<!-- -->
+<ul>
+<li class="">GitHub Pro is a paid plan for personal accounts that offers additional features in addition to the free plan</li>
+</ul>
+</li>
+<li class="">How can you link a pull request to an issue? (Choose two.)<!-- -->
+<ul>
+<li class="">By using a keyword in the pull request description and referencing the issue number</li>
+<li class="">Manually from either the pull requests or the issue view</li>
+</ul>
+</li>
+<li class="">How can you link a pull request to an issue? (Choose two.)<!-- -->
+<ul>
+<li class="">By using a keyword in the pull request description and referencing the issue number</li>
+<li class="">Manually from either the pull request or the issue view</li>
+</ul>
+</li>
+<li class="">Which of these statements about pinned items on your GitHub profile is true?<!-- -->
+<ul>
+<li class="">You can pin up to six repositories or gists on your profile for quick access</li>
+</ul>
+</li>
+<li class="">Which of these statements about GitHub Enterprise deployment options are true? (Select two.)<!-- -->
+<ul>
+<li class="">GitHub Enterprise Server is a self-hosted platform that runs on the company&#x27;s infrastructure</li>
+<li class="">GitHub Enterprise Cloud is a cloud hosted platform that runs on the company&#x27;s cloud infrastructure</li>
+</ul>
+</li>
+<li class="">Which of these layouts are available in GitHub Projects?<!-- -->
+<ul>
+<li class="">Roadmap layout</li>
+<li class="">Table layout</li>
+<li class="">Board layout</li>
+</ul>
+</li>
+<li class="">Which of these statements about the differences of issues and discussions is true?<!-- -->
+<ul>
+<li class="">GitHub Discussions are for conversational that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code, unlike GitHub Issues</li>
+</ul>
+</li>
+<li class="">Which of these is NOT a role in a GitHub Organization?<!-- -->
+<ul>
+<li class="">Organization architect</li>
+</ul>
+</li>
+<li class="">In GitHub a proposal to merge a set of changes from one branch into another branch is called a:<!-- -->
+<ul>
+<li class="">Pull Request</li>
+</ul>
+</li>
+<li class="">Which of these statements regarding GitHub Codespaces lifecycle are true? (Choose three.)<!-- -->
+<ul>
+<li class="">You can disconnect and reconnect to an active Codespace without affecting its running processes</li>
+<li class="">If you create another Codespace on a branch which already had a Codespace running on it, the original Codespace will be deleted</li>
+<li class="">You can stop and restart a Codespace without losing the changes that you make to your project</li>
+</ul>
+</li>
+<li class="">What are GitHub teams?<!-- -->
+<ul>
+<li class="">It is a group of GitHub users from the same organization</li>
+</ul>
+</li>
+<li class="">What are the effects of you following a user on GitHub?<!-- -->
+<ul>
+<li class="">You will get notifications on your personal dashboard about their public activity</li>
+</ul>
+</li>
+<li class="">Which of these best describes git?<!-- -->
+<ul>
+<li class="">Git is a distributed version control system</li>
+</ul>
+</li>
+<li class="">Which of these is a capability of a Security Manager with respect to GitHub Actions in an organization?<!-- -->
+<ul>
+<li class="">They can configure which actions are allowed or blocked across the organization</li>
+</ul>
+</li>
+<li class="">What are some actions you can do in regards to Repository Templates? (Choose two.)<!-- -->
+<ul>
+<li class="">Create a reposiroty template from an existing repository</li>
+<li class="">Delete all repositories that do not use a repository template provided by your organization</li>
+</ul>
+</li>
+<li class="">If there are multiple Readme.md files in a GitHub repository, what is the priority order to show them?<!-- -->
+<ul>
+<li class="">Root directory, <code>.docs</code> directory, <code>.github</code> directory</li>
+</ul>
+</li>
+<li class="">What are the different levels of GitHub organizational hierarchy? (Choose three.)<!-- -->
+<ul>
+<li class="">Team level</li>
+<li class="">Organizational level</li>
+<li class="">Enterprise level</li>
+</ul>
+</li>
+<li class="">What is the minimum permission a user must have to directly push commits to a repository owned by an organization?<!-- -->
+<ul>
+<li class="">Push commits</li>
+</ul>
+</li>
+<li class="">Which of these definitions best describes open source software?<!-- -->
+<ul>
+<li class="">It&#x27;s software with source code that anyone can inspect, modify, and enhance</li>
+</ul>
+</li>
+<li class="">What is a pull request template?<!-- -->
+<ul>
+<li class="">Pull request template is a file that defines the default pull request structure that project contributors will automatically see when they open a pull request</li>
+</ul>
+</li>
+<li class="">Which statement best describes the difference between cloning a repository and forking a repository?<!-- -->
+<ul>
+<li class="">Forking creates a copy under your GitHub account, while cloning creates a local copy on your computer without linking ownership to your account</li>
+</ul>
+</li>
+<li class="">Which search query finds all open issues labeled test that mention &#x27;fix&#x27; in their body text?<!-- -->
+<ul>
+<li class=""><code>is:issue is:open label:test &quot;fix&quot;</code></li>
+</ul>
+</li>
+<li class="">How can you customize the environment that is run in GitHub Codespaces?<!-- -->
+<ul>
+<li class="">By creating a <code>.devcontainer/devcontainer.json</code> configuration file</li>
+</ul>
+</li>
+<li class="">What are the different GitHub pricing plans for organization accounts? (Select three.)<!-- -->
+<ul>
+<li class="">Enterprise</li>
+<li class="">Team</li>
+<li class="">Free</li>
+</ul>
+</li>
+<li class="">Can you change a gist from public to secret after creating it?<!-- -->
+<ul>
+<li class="">No</li>
+</ul>
+</li>
+<li class="">How does the synchronization between GitHub projects, issues and pull requests work?<!-- -->
+<ul>
+<li class="">Updates to the issues and pull requests will be automatically reflected in GitHub Projects. This integration works both ways, so that when you change information about a pull request or issue in your project, the pull request or issue reflects that information</li>
+</ul>
+</li>
+<li class="">Which of the following is true about GitHub wikis?<!-- -->
+<ul>
+<li class="">Wikis in public repositories are accessible to anyone, while those in private repositories are only accessible to repository collaborators</li>
+</ul>
+</li>
+<li class="">Which of the following Git commands allow you to create a new branch and start working on it in one line? (Select two.)<!-- -->
+<ul>
+<li class="">git switch -c <code>&lt;new_branch_name&gt;</code></li>
+<li class="">git checkout -b <code>&lt;new_branch_name&gt;</code></li>
+</ul>
+</li>
+<li class="">Which tool helps you keep the repository dependencies up to date?<!-- -->
+<ul>
+<li class="">Dependabot</li>
+</ul>
+</li>
+<li class="">Where can you find publicly available GitHub Actions?<!-- -->
+<ul>
+<li class="">GitHub Marketplace</li>
+</ul>
+</li>
+<li class="">If you stop your GitHub Codespace environment can you come back to the changes later if you haven&#x27;t committed them?<!-- -->
+<ul>
+<li class="">Yes, that&#x27;s the default behavior when stopping and then starting a GitHub Codespace</li>
+</ul>
+</li>
+<li class="">What happens when you choose to close a Project?<!-- -->
+<ul>
+<li class="">The content is retained and you have the ability to reopen it later</li>
+</ul>
+</li>
+<li class="">Which statement best describes a major difference between new GitHub Projects and GitHub Projects Classic?<!-- -->
+<ul>
+<li class="">The new GitHub Projects provide a flexible spreadsheet-like interface, custom fields, and two-way issue synchronization that were not available in Projects Classic.</li>
+</ul>
+</li>
+<li class="">Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)<!-- -->
+<ul>
+<li class="">List of unresolved conversations</li>
+<li class="">Summary of repository activity</li>
+<li class="">Amount of code line additions and deletions</li>
+<li class="">Amount of forks of the repo</li>
+<li class="">Pull requests open/merged ratio</li>
+</ul>
+</li>
+<li class="">How can you assign a person to an issue or pull request?<!-- -->
+<ul>
+<li class="">By using the Assignees field in the sidebar</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://ghcertified.com/practice_tests/foundations/" target="_blank" rel="noopener noreferrer" class="">GitHub Foundations Practice Test</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/yuribreion1/yuribreion1/tree/main/docs/technology/github/ghf.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/technology/github/overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Overview</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/technology/github/ghas"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">GitHub Advanced Security</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction-to-git" class="table-of-contents__link toc-highlight">Introduction to Git</a><ul><li><a href="#what-is-version-control" class="table-of-contents__link toc-highlight">What is version control?</a></li><li><a href="#git-terminology" class="table-of-contents__link toc-highlight">Git terminology</a></li><li><a href="#git-and-github" class="table-of-contents__link toc-highlight">Git and GitHub</a></li><li><a href="#basic-git-commands" class="table-of-contents__link toc-highlight">Basic Git commands</a></li></ul></li><li><a href="#introduction-to-github" class="table-of-contents__link toc-highlight">Introduction to GitHub</a><ul><li><a href="#what-is-github" class="table-of-contents__link toc-highlight">What is GitHub?</a></li><li><a href="#components-of-the-github-flow" class="table-of-contents__link toc-highlight">Components of the GitHub flow</a></li><li><a href="#github-is-a-collaborative-platform" class="table-of-contents__link toc-highlight">GitHub is a collaborative platform</a></li><li><a href="#github-platform-management" class="table-of-contents__link toc-highlight">GitHub platform management</a></li></ul></li><li><a href="#introduction-to-githubs-products" class="table-of-contents__link toc-highlight">Introduction to GitHub&#39;s products</a><ul><li><a href="#github-accounts-and-plans" class="table-of-contents__link toc-highlight">GitHub accounts and plans</a></li><li><a href="#github-plans" class="table-of-contents__link toc-highlight">GitHub plans</a></li><li><a href="#github-mobile-and-github-desktop" class="table-of-contents__link toc-highlight">GitHub Mobile and GitHub Desktop</a></li><li><a href="#github-billing" class="table-of-contents__link toc-highlight">GitHub billing</a></li></ul></li><li><a href="#configure-code-scanning-on-github" class="table-of-contents__link toc-highlight">Configure code scanning on GitHub</a><ul><li><a href="#what-is-code-scanning" class="table-of-contents__link toc-highlight">What is code scanning?</a></li><li><a href="#about-code-scanning-with-codeql" class="table-of-contents__link toc-highlight">About code scanning with CodeQL</a></li><li><a href="#enable-code-scanning-with-third-party-tools" class="table-of-contents__link toc-highlight">Enable code scanning with third party tools</a></li><li><a href="#about-sarif-file-uploads-for-code-scanning" class="table-of-contents__link toc-highlight">About SARIF file uploads for code scanning</a></li></ul></li><li><a href="#introduction-to-github-copilot" class="table-of-contents__link toc-highlight">Introduction to GitHub Copilot</a><ul><li><a href="#github-copilot-your-ai-pair-programmer" class="table-of-contents__link toc-highlight">GitHub Copilot, your AI pair programmer</a></li><li><a href="#subscription-plans" class="table-of-contents__link toc-highlight">Subscription plans</a></li><li><a href="#interact-with-copilot" class="table-of-contents__link toc-highlight">Interact with Copilot</a></li></ul></li><li><a href="#code-with-github-codespaces" class="table-of-contents__link toc-highlight">Code with GitHub Codespaces</a><ul><li><a href="#create-a-codespace" class="table-of-contents__link toc-highlight">Create a Codespace</a></li><li><a href="#personalize-your-codespace" class="table-of-contents__link toc-highlight">Personalize your Codespace</a></li><li><a href="#codespaces-versus-githubdev-editor" class="table-of-contents__link toc-highlight">Codespaces versus GitHub.dev editor</a></li></ul></li><li><a href="#manage-your-work-with-github-projects" class="table-of-contents__link toc-highlight">Manage your work with GitHub Projects</a><ul><li><a href="#creating-an-organization-level-project" class="table-of-contents__link toc-highlight">Creating an organization-level project</a></li><li><a href="#add-an-existing-issue-and-pull-request-to-your-project" class="table-of-contents__link toc-highlight">Add an existing issue and pull request to your project</a></li></ul></li><li><a href="#contribute-to-an-open-source-project-on-github" class="table-of-contents__link toc-highlight">Contribute to an open-source project on GitHub</a><ul><li><a href="#familiarize-yourself-with-an-open-source-project" class="table-of-contents__link toc-highlight">Familiarize yourself with an open-source project</a></li><li><a href="#sponsor-a-project" class="table-of-contents__link toc-highlight">Sponsor a project</a></li><li><a href="#communicate-your-intent-to-maintainers" class="table-of-contents__link toc-highlight">Communicate your intent to maintainers</a></li></ul></li><li><a href="#knowledge-checks" class="table-of-contents__link toc-highlight">Knowledge checks</a></li><li><a href="#commands-tested-on-the-sandbox" class="table-of-contents__link toc-highlight">Commands tested on the sandbox</a></li><li><a href="#github-foundations-practice-test" class="table-of-contents__link toc-highlight">GitHub Foundations Practice Test</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/about">About</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://x.com/yuribreion" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/yuribreion1" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 yuribreion1 - Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
