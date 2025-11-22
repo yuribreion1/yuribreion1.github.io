@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 ---
 
 # Initial steps with Python
 
-1. Creating your local environment using [Visual Studio Code](https://code.visualstudio.com): 
+1. Creating your local environment using [Visual Studio Code](https://code.visualstudio.com):
 
 ![Configure Python environment](img/python-1.png)
 
@@ -88,3 +88,4 @@ if __name__ == "__main__":
     
     save_to_csv(results)
 ```
+
