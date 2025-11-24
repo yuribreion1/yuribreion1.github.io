@@ -54,3 +54,46 @@ print(my_car.color)  # Output: Black
 # Use Methods
 my_car.start_engine() # Output: The Toyota goes Vroom!
 ```
+
+### Inheritance
+
+This is a key concept on the Object-Oriented Programming,
+when characteristics from a parent class is called and utilized.
+
+A given class can receive a parent class as argument, and can use
+its functions, including its constructor.
+
+Follow an example:
+
+```python
+# --- THE PARENT (Base Class) ---
+class APIClient:
+    def __init__(self, base_url):
+        self.base_url = base_url
+        print(f"   [Parent] Base URL set to {self.base_url}")
+
+# --- THE CHILD (Subclass) ---
+# We put the Parent class in parentheses
+class SecureClient(APIClient):
+    
+    def __init__(self, base_url, api_key):
+        # 1. First, let the parent do its job
+        # We pass 'base_url' up to the parent
+        super().__init__(base_url) 
+        
+        # 2. Now, do the child-specific work
+        self.api_key = api_key
+        print(f"   [Child] API Key set to {self.api_key}")
+
+# --- USAGE ---
+print("Creating client...")
+client = SecureClient("https://google.com", "secret_123")
+
+print("\nVerifying attributes:")
+print(f"URL: {client.base_url}") # Inherited from Parent
+print(f"Key: {client.api_key}")  # Defined in Child
+```
+
+This is the adoption of the concept of **DRY** that means
+*Don't repeat yourself*. If the `super` is not utilized,
+the constructor arguments are copied, generating duplicate code.
